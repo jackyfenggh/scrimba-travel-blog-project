@@ -1,38 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+}
+
 .App {
-  text-align: center;
+  width: 550px;
+  margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  width: 100%;
+  height: 55px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #F55A5A;
+  margin-bottom: 36px;
 }
 
-.App-link {
-  color: #61dafb;
+.header--title {
+  font-weight: 500;
+  font-size: 14.4608px;
+  line-height: 18px;
+  letter-spacing: -0.075em;
+  color: #FFFFFF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.destinationCard--img {
+  width: 125px;
+  height: 168px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.destinationCard {
+  width: 480px;
+  display: flex;
+  gap: 29px;
+  align-items: center;
+  margin: auto;
+  padding: 18px 0;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+.destinationCard--header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.destinationCard--header > img {
+  margin-right: 5px;
+}
+
+.destinationCard--header--country {
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 12px;
+  letter-spacing: 0.17em;
+  color: #2B283A;
+  margin-right: 10px;
+}
+
+.destinationCard--header--googleMaps {
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 12px;
+  text-decoration-line: underline;
+  color: #918E9B;
+}
+
+.destinationCard--siteName {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 12px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.destinationCard--datesTravelled {
+  font-weight: 700;
+  font-size: 10.24px;
+  line-height: 12px;
+  margin-bottom: 10px;
+}
+
+.destinationCard--siteDescription {
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
